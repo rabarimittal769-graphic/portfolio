@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mittal - Personal Portfolio</title>
+
+    <!-- cdn link (https://cdnjs.com/libraries/font-awesome/6.4.2)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+
+    <!--(https://www.jsdelivr.com/package/npm/@iconscout/unicons) jsdelivr link  -->
+    <link href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.2.0/css/line.min.css" rel="stylesheet">
+
+    <!--External css link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- jquery bootstrap cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+        integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+        crossorigin="anonymous"></script>
+
+    <!-- favicon -->
+    <link rel="icon" type="images/x-icon" href="./img/logo.png">
+</head>
+
+<body>
+    <!-- Nav menu -->
+    <div class="container">
+        <nav id="header">
+            <div class="nav-logo">
+                <a href="#" class="nav-name"><img src="./img/logo1.jpg" alt="" /></a>
+            </div>
+            <div class="nav-menu" id="myNavMenu">
+                <ul class="nav_menu_list">
+                    <li class="nav_list">
+                        <a href="#home" class="nav-link active_link">Home</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#about" class="nav-link">About</a>
+                        <div class="circle"></div>
+                    </li>
+                    <li class="nav_list">
+                        <a href="#projects" class="nav-link">Projects</a>
+                        <div class="circle"></div>
+                    </li>
+                </ul>
+            </div>
+            <!-- dark mode -->
+            <div class="mode">
+                <div class="moon-sun" id="toggle-switch">
+                    <i class="fa fa-moon" id="moon"></i>
+                    <i class="fa fa-sun" id="sun"></i>
+                </div>
+            </div>
+            <div class="nav-menu-btn">
+                <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+            </div>
+        </nav>
+
+        <!-- main -->
+        <main class="wrapper">
+            <section class="featured-box" id="home">
+                <div class="featured-text">
+                    <div class="hello">
+                        <p>Hello I am</p>
+                    </div>
+                    <div class="featured-name">
+                        <span class="typedText"></span>
+                    </div>
+                    <div class="text-info">
+                        <p>My name is Rabari Mittal ! I am a Graphics design with 1.5+ years of experience</p>
+                    </div>
+                    <div class="text-btn">
+                        <button class="btn hire-btn"><a href="#contact"
+                                style="text-decoration: none; color: white;">Hire Me</a></button>
+                        <button class="btn">
+                            <a href="./resume.pdf" target="_blank" download="resume.pdf"
+                                style="text-decoration: none; color: white;">Download CV<i
+                                    class="uil uil-file"></a></i></button>
+                    </div>
+                </div>
+                <div class="featured-image">
+                   <img src="./img/mittal.png" alt="">
+                </div>
+            </section>
+            <!-- about box -->
+            <section class="section" id="about">
+                <div class="top-header">
+                    <h1>About Me</h1>
+                </div>
+                <div class="row">
+                    <div class="col">
+                        <div class="about-info">
+                            <figure class="about-me">
+                                <figcaption>
+                                     <img src="./img/mittal_back.jpeg" alt="" class="profile">
+                                    <h2>Graphics Designing</h2>
+                                    <p>My name is Rabari Mittal ! I'm a Graphics Designing with 1.5 + Years of
+                                        Experience.</p>
+                                    <p>To Develop as Leader Bring Out Solution For Every Problem. Caceive New Concepts
+                                        And Apply Them In An Efficient Way To Benefit The Organisation That I Work For.
+                                    </p>
+                                </figcaption>
+                            </figure>
+                            <button class="about-me-btn"><a href="#contact"
+                                    style="text-decoration: none; color: white;">Hire Me</a></button>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <div class="skill-box">
+                            <span class="title">Adobe Premiere Pro</span>
+                            <div class="skill-bar">
+                                <span class="skill-per html">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Adobe PhotoShop</span>
+                            <div class="skill-bar">
+                                <span class="skill-per css">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Adobe Illustrator</span>
+                            <div class="skill-bar">
+                                <span class="skill-per javascript">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Adobe Indesign</span>
+                            <div class="skill-bar">
+                                <span class="skill-per bootstrap">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Coral Draw</span>
+                            <div class="skill-bar">
+                                <span class="skill-per php">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Canva</span>
+                            <div class="skill-bar">
+                                <span class="skill-per python">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Capcut</span>
+                            <div class="skill-bar">
+                                <span class="skill-per react">
+                                    <span class="tooltip">75%</span>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="skill-box">
+                            <span class="title">Figma</span>
+                            <div class="skill-bar">
+                                <span class="skill-per node">
+                                    <span class="tooltip">80%</span>
+                                </span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Project box -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Project</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box">
+                        <i class="uil uil-briefcase-alt"></i>
+                        <a href="https://github.com/rabarimittal769-graphic" target="_blank" class="projects">
+                            <h3>Completed</h3>
+                        </a>
+                        <label>10+ Finished Projects</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-users-alt"></i>
+                        <h3>Clients</h3>
+                        <label>15+ Happy Clients</label>
+                    </div>
+                    <div class="project-box">
+                        <i class="uil uil-award"></i>
+                        <a href="https://github.com/rabarimittal769-graphic" target="_blank" class="projects">
+                            <h3>Experiences</h3>
+                        </a>
+                        <label>1.5 + Years in Graphics Design</label>
+                    </div>
+                </div>
+            </section>
+
+            <!-- main PHP Projects link with Github -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Github Projects</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box project-box1 back">
+                        <a href="https://github.com/rabarimittal769-graphic/Graphic-potfolio" target="_blank"
+                            class="projects">
+                            <h3>Graphic Portfolio</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back1">
+                        <a href="https://github.com/rabarimittal769-graphic/corel-draw_project" target="_blank"
+                            class="projects">
+                            <h3>CoralDraw Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back2">
+                        <a href="https://github.com/rabarimittal769-graphic/figma_project" target="_blank"
+                            class="projects">
+                            <h3>Figma Project</h3>
+                        </a>
+                    </div>
+
+                    <div class="project-box project-box1 back3">
+                        <a href="https://github.com/rabarimittal769-graphic/indesign_project" target="_blank"
+                            class="projects">
+                            <h3>InDesign Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back4">
+                        <a href="https://github.com/rabarimittal769-graphic/illustrator_project" target="_blank"
+                            class="projects">
+                            <h3>Illustrator Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back5">
+                        <a href="https://github.com/rabarimittal769-graphic/Photoshop_project" target="_blank"
+                            class="projects">
+                            <h3>PhotoShop Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back6">
+                        <a href="https://github.com/rabarimittal769-graphic/canva_project" target="_blank"
+                            class="projects">
+                            <h3>Canvas Project</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <!-- main pdf open in new tab -->
+            <section class="section" id="projects">
+                <div class="top-header">
+                    <h1>Projects Show On Pdf</h1>
+                </div>
+                <div class="project-container">
+                    <div class="project-box project-box1 back">
+                        <a href="./pdf/Graphic-Portfolio.pdf" target="_blank" class="projects">
+                            <h3>Graphic Portfolio</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back1">
+                        <a href="./pdf/CorelDraw-Project.pdf" target="_blank" class="projects">
+                            <h3>CoralDraw Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back2">
+                        <a href="./pdf/Figma-Project.pdf" target="_blank" class="projects">
+                            <h3>Figma Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back3">
+                        <a href="./pdf/InDesign-Project.pdf" target="_blank" class="projects">
+                            <h3>InDesign Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back4">
+                        <a href="./pdf/Illustrator-Project.pdf" target="_blank" class="projects">
+                            <h3>Illustrator Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back5">
+                        <a href="./pdf/Photoshop-Project.pdf" target="_blank" class="projects">
+                            <h3>PhotoShop Project</h3>
+                        </a>
+                    </div>
+                    <div class="project-box project-box1 back6">
+                        <a href="./pdf/Canva-Project.pdf" target="_blank" class="projects">
+                            <h3>Canvas Project</h3>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- footer -->
+            <footer>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list"><a href="#home">Home</a></li>
+                        <li class="footer_menu_list"><a href="#about">About</a></li>
+                        <li class="footer_menu_list"><a href="#projects">Projects</a></li>
+                    </ul>
+                </div>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Mittal Rabari</a> - All rights
+                        reserved 2026</p>
+                </div>
+            </footer>
+    </div>
+
+
+
+    <!-- typed animations in js link -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+    <script src="jquery-3.6.3.min.js"></script>
+    <script src="jquery.scrollUp.min.js"></script>
+    <script src="script.js"></script>
+    <script src="script_main.js"></script>
+
+</body>
+
+</html>
